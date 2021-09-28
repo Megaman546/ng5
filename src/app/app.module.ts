@@ -1,6 +1,7 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 
+import { DataService } from './data.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -21,7 +22,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
